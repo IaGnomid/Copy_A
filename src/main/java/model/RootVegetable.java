@@ -15,7 +15,7 @@ public class RootVegetable implements Comparable<RootVegetable> {
 
     @Override
     public int compareTo(RootVegetable o) {
-        return 0;
+        return (int) (this.weight - o.weight);
     }
 
     public static class Builder {

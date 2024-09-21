@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Car implements Comparable<Car> {
     @Override
     public int compareTo(Car o) {
-        return 0;
+        return this.year - o.year;
     }
 
     private String model;

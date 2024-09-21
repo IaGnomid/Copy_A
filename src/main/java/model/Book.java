@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Book implements Comparable<Book> {
     @Override
     public int compareTo(Book o) {
-        return 0;
+        return this.pageCount - o.pageCount;
     }
 
     private String author;
